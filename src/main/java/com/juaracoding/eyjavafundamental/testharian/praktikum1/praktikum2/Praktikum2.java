@@ -14,22 +14,10 @@ public class Praktikum2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int intInputanAwal = 0;
-        int intTampung = 0;
 
-        System.out.println("Masukkan Angka :");
 
-        while (true) {
-            try {
-                int intBacainputan = scanner.nextInt();
-                intInputanAwal += intBacainputan;
-                intTampung++;
+        System.out.println("Masukkan Angka : "+intInputanAwal);
 
-            }catch(Exception e){
-                break;
-            }
-        }
-        double doHitungRataRata = (double) intInputanAwal / intTampung;
-        System.out.println("Hasil rataratanya adalah"+doHitungRataRata);
     }
 }
 

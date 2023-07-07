@@ -10,7 +10,7 @@ Version 1.0
 */
 public class MethodSatu {
     public static void main(String[] args){
-    System.out.println(intRumusPersegi(35*5));
+    System.out.println(intRumusPersegi(75));
     System.out.println(doRumusLayangLayang(7.8,2.7));
 
 //        hitung luas persegi
@@ -18,7 +18,7 @@ public class MethodSatu {
     }
 
 //    methodnya
-    public static int intRumusPersegi(int intSisi)
+    public static double intRumusPersegi (int intSisi)
     {
         int intRumusPersegi = intSisi*intSisi;
         return intRumusPersegi;

@@ -46,8 +46,7 @@ public class Praktikum1 {
 // ANALISA SIMBOL @ ADALAH 64
 
             // STEP 5 MELAKUKAN PENGKODISIAN PADA PROSES CONVERT
-            if (
-                    (intConvertKata >= 65 && intConvertKata <= 90)||
+            if ((intConvertKata >= 65 && intConvertKata <= 90)||
 //                            (intConvertKata >= 97 && intConvertKata <= 122)||
                             (intConvertKata == 32)||
                             (intConvertKata == 46)||
