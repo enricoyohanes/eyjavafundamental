@@ -1,5 +1,6 @@
 package com.juaracoding.eyjavafundamental.cobacoba;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*IntelliJ IDEA 2023.1.2 (Community Edition)
@@ -20,12 +21,29 @@ public class LatihanException1 {
             while (true){
                 System.out.println("Masukkan Bilangan Bulat : ");
                 intInputan = scanner.nextInt();
+                break;
             }
-        }catch(Exception e){
+        }catch(InputMismatchException e){
             System.out.println("Bilangannya bukan bilangan bulat!!");
+            scanner.next();
+            intInputan = 0;
+        }
+        try{
+            while (true){
+                System.out.println("Masukkan Bilangan Desimal : ");
+                doInputan = scanner.nextDouble();
+                break;
+            }
+        }catch(InputMismatchException e){
+            System.out.println("Bilangannya bukan bilangan bulat!!");
+            scanner.next();
+            doInputan = 0.0;
         }
 
+        System.out.println("Bilangannya bukan Integer : "+intInputan);
+        System.out.println("Bilangannya bukan desimal : "+doInputan);
 
+        scanner.close();
     }
 }
 
